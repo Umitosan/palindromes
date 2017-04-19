@@ -16,4 +16,8 @@ describe() do
     expect("may a moody baby doom a yam".pal?()).to(eq(true))
   end
 
+  it("returns the reversed version of a word") do
+    expect("12 212 21".pal?()).to(eq(true))
+  end
+
 end

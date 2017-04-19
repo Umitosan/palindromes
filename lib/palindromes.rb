@@ -19,7 +19,7 @@ class String
     #get rid of all spaces before comparing
     final_word = final_word.split(" ").join("")
     starting_string = starting_string.split(" ").join("")
-    
+    #returns true or false
     final_word == starting_string
   end
 end
