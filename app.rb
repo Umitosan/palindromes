@@ -1,0 +1,6 @@
+require('rspec')
+require('./lib/palindromes')
+require('sinatra')
+require('sinatra/reloader')
+require('pry')
+also_reload('lib/**/*.rb')
