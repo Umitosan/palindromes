@@ -14,18 +14,12 @@ class String
       working_array2.push(working_array1.pop())
     end
 
-    final_word = working_array2.join()
+    final_word = working_array2.join("")
 
-    (final_word == starting_string).to_s
+    #get rid of all spaces before comparing
+    final_word = final_word.split(" ").join("")
+    starting_string = starting_string.split(" ").join("")
+    
+    final_word == starting_string
   end
 end
-
-
-
-
-
-# count = 0
-# (len+1).times() do
-#   working_array2.push(working_array1[len-count])
-#   count += 1
-# end
